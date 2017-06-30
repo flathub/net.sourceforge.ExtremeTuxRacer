@@ -21,36 +21,8 @@
         "*.la", "*.a"
     ],
     "modules": [
-        {
-            "name": "udev",
-            "cleanup": [
-                "/etc",
-                "/libexec"
-            ],
-            "config-opts": [
-                "--disable-hwdb",
-                "--disable-logging",
-                "--disable-gudev",
-                "--disable-introspection",
-                "--disable-keymap",
-                "--disable-mtd_probe"
-            ],
-            "rm-configure": true,
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://kernel.org/pub/linux/utils/kernel/hotplug/udev-175.tar.bz2",
-                    "sha256": "4c7937fe5a1521316ea571188745b9a00a9fdf314228cffc53a7ba9e5968b7ab"
-                },
-                {
-                    "type": "script",
-                    "dest-filename": "autogen.sh",
-                    "commands": [
-                        "autoreconf -vfi"
-                    ]
-                }
-            ]
-        },
+        "shared-modules/udev/udev-175.json",
+        "shared-modules/glu/glu-9.0.0.json",
         {
             "name": "SFML",
             "buildsystem": "cmake",
@@ -65,7 +37,6 @@
                 }
             ]
         },
-        "shared-modules/glu/glu-9.0.0.json",
         {
             "name": "extremetuxracer",
             "sources": [
