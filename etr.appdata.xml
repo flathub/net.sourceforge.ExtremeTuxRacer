@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
     <id type="desktop">etr.desktop</id>
-    <licence>CC0</licence>
+    <metadata_licence>CC0</metadata_licence>
+    <project_license>GPL-2.0</project_license
     <name>Extreme Tuxracer</name>
     <summary>High speed arctic racing game based on Tux Racer</summary>
     <description>
