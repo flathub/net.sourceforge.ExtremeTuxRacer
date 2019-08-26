@@ -42,8 +42,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.7.4/etr-0.7.4.tar.xz",
-                    "sha256": "da9ce3a1b1e56415285163b9ebc67fdb11fca07acd3ab18f793556d996275234"
+                    "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.7.5/etr-0.7.5.tar.xz",
+                    "sha256": "4fd39c52a426ba22deb26bcceb807d7eebe7b7d7df578cfd03f10066c218c6d3"
                 },
                 {
                     "type": "file",
