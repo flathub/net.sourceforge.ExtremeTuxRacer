@@ -1,0 +1,47 @@
+app-id: net.sourceforge.ExtremeTuxRacer
+runtime: org.freedesktop.Platform
+runtime-version: "19.08"
+sdk: org.freedesktop.Sdk
+finish-args:
+  - "--device=all"
+  - "--share=ipc"
+  - "--socket=x11"
+  - "--socket=pulseaudio"
+  - "--persist=.etr"
+rename-appdata-file: etr.appdata.xml
+rename-desktop-file: etr.desktop
+rename-icon: etr
+cleanup:
+  - "/include"
+  - "/lib/pkgconfig"
+  - "/share/aclocal"
+  - "/share/man"
+  - "*.la"
+  - "*.a"
+
+modules:
+  - shared-modules/glu/glu-9.json
+
+  - name: SFML
+    buildsystem: cmake-ninja
+    config-opts:
+      - "-DSFML_INSTALL_PKGCONFIG_FILES=TRUE"
+    sources:
+      - type: archive
+        url: https://www.sfml-dev.org/files/SFML-2.5.1-sources.zip
+        sha256: bf1e0643acb92369b24572b703473af60bac82caf5af61e77c063b779471bb7f
+
+  - name: extremetuxracer
+    sources:
+      - type: archive
+        url: https://downloads.sourceforge.net/project/extremetuxracer/releases/0.8.0/etr-0.8.0.tar.xz
+        sha256: 4b2899314eda8d0826504ab274acb13ab0dab58b6d0641587749dfa77757da17
+      - type: file
+        path: etr.appdata.xml
+    post-install:
+      - mkdir -p /app/share/appdata
+      - cp etr.appdata.xml /app/share/appdata
+      - mkdir -p /app/share/icons/hicolor/48x48/apps
+      - mv /app/share/pixmaps/etr.png /app/share/icons/hicolor/48x48/apps
+      - mkdir -p /app/share/icons/hicolor/scalable/apps
+      - mv /app/share/pixmaps/etr.svg /app/share/icons/hicolor/scalable/apps
