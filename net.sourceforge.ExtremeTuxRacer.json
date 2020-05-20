@@ -1,7 +1,7 @@
 {
     "app-id": "net.sourceforge.ExtremeTuxRacer",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=all",
@@ -21,19 +21,18 @@
         "*.la", "*.a"
     ],
     "modules": [
-        "shared-modules/udev/udev-175.json",
-        "shared-modules/glu/glu-9.0.0.json",
+        "shared-modules/glu/glu-9.json",
         {
             "name": "SFML",
-            "buildsystem": "cmake",
+            "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DSFML_INSTALL_PKGCONFIG_FILES=TRUE"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.sfml-dev.org/files/SFML-2.4.2-sources.zip",
-                    "sha256": "8ba04f6fde6a7b42527d69742c49da2ac529354f71f553409f9f821d618de4b6"
+                    "url": "https://www.sfml-dev.org/files/SFML-2.5.1-sources.zip",
+                    "sha256": "bf1e0643acb92369b24572b703473af60bac82caf5af61e77c063b779471bb7f"
                 }
             ]
         },
@@ -42,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.7.5/etr-0.7.5.tar.xz",
-                    "sha256": "4fd39c52a426ba22deb26bcceb807d7eebe7b7d7df578cfd03f10066c218c6d3"
+                    "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.8.0/etr-0.8.0.tar.xz",
+                    "sha256": "4b2899314eda8d0826504ab274acb13ab0dab58b6d0641587749dfa77757da17"
                 },
                 {
                     "type": "file",
