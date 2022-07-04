@@ -10,7 +10,7 @@
         "--socket=pulseaudio",
         "--persist=.etr"
     ],
-    "rename-appdata-file": "etr.metainfo.xml",
+    "rename-appdata-file": "etr.appdata.xml",
     "rename-desktop-file": "etr.desktop",
     "rename-icon": "etr",
     "cleanup": [
@@ -41,17 +41,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.8.1/etr-0.8.1.tar.xz",
-                    "sha256": "92da963ed32ab9bff126346edfb9549e871d7c3cec753f4ac5098e0d53c38341"
+                    "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.8.2/etr-0.8.2.tar.xz",
+                    "sha256": "1c874965e9e249533bf15c08dabc61e60c05bb3fd578917880117ff8a910cd4e"
                 },
                 {
-                    "type": "file",
-                    "path": "etr.metainfo.xml"
+                    "type": "patch",
+                    "path": "fix-metainfo.patch",
+                    "strip-components": 0
                 }
             ],
             "post-install": [
-                "mkdir -p /app/share/metainfo",
-                "install -Dm644 etr.metainfo.xml /app/share/metainfo",
                 "mkdir -p /app/share/icons/hicolor/48x48/apps",
                 "mv /app/share/pixmaps/etr.png /app/share/icons/hicolor/48x48/apps",
                 "mkdir -p /app/share/icons/hicolor/scalable/apps",
