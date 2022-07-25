@@ -1,0 +1,17 @@
+Index: resources/etr.appdata.xml
+===================================================================
+--- resources/etr.appdata.xml	(revision 796)
++++ resources/etr.appdata.xml	(working copy)
+@@ -27,6 +27,12 @@
+             <image>https://a.fsdn.com/con/app/proj/extremetuxracer/screenshots/ETR2.png</image>
+         </screenshot>
+     </screenshots>
++    <releases>
++         <release version="0.8.2" date="2022-06-16"/>
++         <release version="0.8.1" date="2021-06-24"/>
++         <release version="0.8.0" date="2020-03-07"/>
++    </releases>
++    <content_rating type="oars-1.1" />
+     <url type="homepage">https://extremetuxracer.sourceforge.net/</url>
+     <update_contact>https://sourceforge.net/p/extremetuxracer/discussion/</update_contact>
+ </component>
