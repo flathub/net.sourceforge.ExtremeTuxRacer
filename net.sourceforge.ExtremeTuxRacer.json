@@ -13,6 +13,7 @@
     "rename-appdata-file": "etr.appdata.xml",
     "rename-desktop-file": "etr.desktop",
     "rename-icon": "etr",
+    "command": "etr",
     "cleanup": [
         "/include",
         "/lib/pkgconfig",
