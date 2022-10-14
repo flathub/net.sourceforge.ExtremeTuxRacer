@@ -1,7 +1,7 @@
 {
     "app-id": "net.sourceforge.ExtremeTuxRacer",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "22.08",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=all",
@@ -13,6 +13,7 @@
     "rename-appdata-file": "etr.appdata.xml",
     "rename-desktop-file": "etr.desktop",
     "rename-icon": "etr",
+    "command": "etr",
     "cleanup": [
         "/include",
         "/lib/pkgconfig",
