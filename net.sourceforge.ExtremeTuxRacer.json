@@ -10,8 +10,8 @@
         "--socket=pulseaudio",
         "--persist=.etr"
     ],
-    "rename-appdata-file": "etr.appdata.xml",
-    "rename-desktop-file": "etr.desktop",
+    "rename-appdata-file": "net.sourceforge.extremetuxracer.metainfo.xml",
+    "rename-desktop-file": "net.sourceforge.extremetuxracer.desktop",
     "rename-icon": "etr",
     "command": "etr",
     "cleanup": [
@@ -42,8 +42,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.8.2/etr-0.8.2.tar.xz",
-                    "sha256": "1c874965e9e249533bf15c08dabc61e60c05bb3fd578917880117ff8a910cd4e"
+                    "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.8.4/etr-0.8.4.tar.xz",
+                    "sha256": "fa3285cc0c755a5aff529f3f2cea3516481114c6b4b8e1ec0769feeff04773e5"
                 },
                 {
                     "type": "patch",
