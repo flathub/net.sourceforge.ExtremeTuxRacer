@@ -1,6 +1,6 @@
 app-id: net.sourceforge.ExtremeTuxRacer
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 finish-args:
   - "--device=all"
@@ -26,6 +26,7 @@ modules:
   - name: SFML
     buildsystem: cmake-ninja
     config-opts:
+      - "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
       - "-DSFML_INSTALL_PKGCONFIG_FILES=TRUE"
     sources:
       - type: archive
